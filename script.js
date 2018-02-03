@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   const price = document.querySelector('.price');
   const short = document.querySelector('.short');
+  const chance = document.querySelector('.chance');
 	fetch('https://api.coinmarketcap.com/v1/ticker/bitcoin/')
 		.then(res => res.json())
 		.then(i => {
       price.innerHTML = (i[0].price_usd).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
       short.innerHTML = (1000000 - i[0].price_usd).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+      chance.innerHTML = ((1000000 - i[0].price_usd).toFixed(2).slice(0,2));
 		})
 		.catch(err => console.log(err));
 });
