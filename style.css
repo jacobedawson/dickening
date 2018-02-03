@@ -1,0 +1,97 @@
+body {
+	background: #3a7ca5;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	color: white;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.container {
+	text-align: center;
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.top-pad {
+    padding: 24px;
+}
+
+.main-title {
+	font-weight: bold;
+	font-size: 4rem;
+}
+
+.price-block {
+	margin-top: 0;
+	font-size: 5rem;
+}
+
+.twitter-tweet {
+	margin: auto;
+}
+
+#clockdiv {
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div {
+	font-size: 4rem;
+	padding: 10px;
+	border-radius: 3px;
+	display: inline-block;
+	margin-bottom: 16px;
+}
+
+#clockdiv div > span {
+	padding: 15px;
+	border-radius: 3px;
+	background: #0f7173;
+	display: inline-block;
+}
+
+.smalltext {
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+footer {
+	margin-top: 48px;
+	background: rgba(204, 204, 204, 0.1);
+	padding: 10px;
+}
+footer ul {
+    padding: 0;
+	text-align: left;
+	max-width: 500px;
+	margin: auto;
+	list-style: none;
+}
+
+@media (max-width: 800px) {
+    .price-block {
+        font-size: 4rem;
+    }
+    footer ul {
+        font-size: 12px;
+    }
+}
